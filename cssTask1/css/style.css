@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 300px 600px 200px 450px;
+    grid-template-areas: 
+    "head head head"
+    "feat1  feat2 feat3"
+    "sign sign sign"
+    "content content content";
+}
+
+.container > * {
+    display: grid;
+    justify-items: center;
+    align-items: center;                                                                                                                   
+}
+
+.header {
+    background-color: deeppink;
+    grid-area: head;
+    align-items: center;
+}
+
+.content {
+    background-color: seagreen;
+    grid-area: content;
+}
+
+.sign-up {
+    background-color: darkcyan;
+    grid-area: sign;
+}
+
+.feature-one {
+    background-color: dodgerblue;
+    grid-area: feat1;
+}
+
+.feature-two {
+    background-color: blue;
+    grid-area: feat2;
+}
+
+.feature-three {
+    background-color: purple;
+    grid-area: feat3;
+}
+
